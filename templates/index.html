@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>
+        欢迎光临lwy的个人博客
+    </title>
+</head>
+<body>
+    <h1>欢迎光临lwy的个人博客</h1>
+    <hr>
+    {% for post in posts %}
+        <p style="font-family:微软雅黑;font-size:14pt;font-weight:bold;">
+            <a href='/admin/mainsite/post/{{post.slug}}'>{{post.title}}</a>
+        </p>
+    {% endfor %}
+    <hr>
+    <h3>
+        当前时间：{{now}}
+    </h3>
+
+</body>
+</html>
