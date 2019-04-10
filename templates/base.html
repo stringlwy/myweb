@@ -1,13 +1,72 @@
 <!-- base.html -->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
     <meta charset="UTF-8">
     <title>
-        {}
+        {% block title %} {% endblock %}
     </title>
+    <script src="//code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+    <!-- 最新版本的 Bootstrap 核心 CSS 文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css"
+          integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u"
+          crossorigin="anonymous">
+
+    <!-- 可选的 Bootstrap 主题文件 -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap-theme.min.css"
+          integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp"
+          crossorigin="anonymous">
+    <!-- 最新的 Bootstrap 核心 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/js/bootstrap.min.js"
+        integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa"
+        crossorigin="anonymous"></script>
 </head>
 <body>
+    <div class="container-fluid">
+        {% include 'header.html' %}
+        <div class="row">
+        <div class="col-sm-4 col-md-4">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3>
+                        MENU
+                    </h3>
+            </div>
+            <div class="panel-body">
+                <div class="list-group">
+                    <li class="list-group-item">
+                        <a href="/">HOME</a>
+                    </li>
+                    <li class="list-group-item">
+                        <a href="http://tar.so/news">实时新闻</a>
 
+                    </li>
+                    <li class="list-group-item">
+                        <a href="http://tar.so/news">电视新闻</a>
+                    </li>
+                </div>
+                <script type="text/javascript" src="http://www.weather.com.cn/weather1d/101220101.shtml&amp;tft=3&amp;dd=0&amp;wid=&amp;
+                        pid=0&amp;proid=0&amp;bc=FFFFFF&amp;tc=000000&amp;brd1=012B6B&amp;lnk=135D9E&amp;hc=FFFFFF&amp;
+                        hfc=2853A8&amp;btn=C99700&amp;ww=190&amp;wne=6&amp;srefs=0"></script><noscript>
+                        <a href="http://www.weather.com.cn/">Live Traffic Stats</a></noscript>
+            </div>
+        </div>
+        </div>
+            <div class="col-sm-8  col-md-8">
+                <div class="panel panel-default">
+                    <div class="panel-heading">
+                        {% block headmessage %} {% endblock %}
+                    </div>
+                    <div class="panel-body">
+                        {% block content %} {% endblock %}
+                    </div>
+                    <div class="panel-footer">
+                        {% include 'footer.html' %}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>

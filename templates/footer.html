@@ -1,10 +1,8 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<!-- 共享页尾，用来放置版权声明和参考信息 -->
+{% block footer %}
+    {% if now %}
+    <p style="font-family:微软雅黑;">现在时刻：{{now}}</p>
+    {% else %}
+    <p style="font-family:微软雅黑;">---练习使用---</p>
+    {% endif %}
+{% endblock %}

@@ -1,10 +1,15 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <title>$Title$</title>
-</head>
-<body>
-$END$
-</body>
-</html>
+<!-- 网页共享标题，用来放置logo -->
+<!-- header.html -->
+{% load staticfiles %}
+<div class="well">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-sm-4 col-md-11">
+                <h1 style="font-family:微软雅黑;">欢迎光临lwy的个人博客</h1>
+            </div>
+            <div class="col-sm-2 col-md-1">
+                <img src="{% static 'images/logo1.png' %}">
+            </div>
+        </div>
+    </div>
+</div>

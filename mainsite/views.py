@@ -16,7 +16,7 @@ def homepage(request):
 
 def showpost(request, slug):
     template = get_template('post.html')
-    now = datetime.now()
+    # now = datetime.now()
     try:
         post = Post.objects.get(slug=slug)
         if post is not None:
