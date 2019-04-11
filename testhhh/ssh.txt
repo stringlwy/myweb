@@ -1,0 +1,13 @@
+总用量 96
+drwxrwxr-x 9 lwy lwy  4096 4月  11 16:36 .
+drwxrwxr-x 5 lwy lwy  4096 4月   8 12:49 ..
+-rw-rw-r-- 1 lwy lwy 51200 4月  10 21:07 db.sqlite3
+drwxrwxr-x 8 lwy lwy  4096 4月  11 16:35 .git
+drwxrwxr-x 4 lwy lwy  4096 4月  10 22:03 mainsite
+-rwxrwxr-x 1 lwy lwy   537 4月   4 23:55 manage.py
+drwxrwxr-x 3 lwy lwy  4096 4月  10 22:08 myweb
+drwxrwxr-x 2 lwy lwy  4096 4月   7 23:57 __pycache__
+-rw-rw-r-- 1 lwy lwy    77 4月  10 22:48 requirements.txt
+drwxrwxr-x 3 lwy lwy  4096 4月  10 15:34 static
+drwxrwxr-x 2 lwy lwy  4096 4月  10 19:14 templates
+drwxrwxr-x 2 lwy lwy  4096 4月  11 16:36 testhhh
