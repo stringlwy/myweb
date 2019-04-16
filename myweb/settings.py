@@ -82,6 +82,8 @@ DATABASES = {
     # }
 
     # 迁移到关系型数据库mysql中，建立数据库时注意选择默认编码为utf8
+    # CREATE DATABASE mydb DEFAULT CHARACTER SET utf8 COLLATE utf8_general_ci;
+
     'default': {
         'ENGINE': 'django.db.backends.mysql',
         'NAME': 'mydb',

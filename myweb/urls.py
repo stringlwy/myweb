@@ -17,13 +17,13 @@ from django.contrib import admin
 from django.urls import path, re_path
 import sys
 import os
-import re
 # 添加顶层目录
 Parent_Parent_directory = os.path.abspath(os.path.join(os.getcwd(), ".."))
 sys.path.append(Parent_Parent_directory)
-from mainsite.views import homepage, showpost
+from mainsite.views import homepage, showpost, showtv
 urlpatterns = [
     re_path(r'admin/mainsite/post/(\d+/\w+)', showpost),
     path('admin/', admin.site.urls),
     re_path('^$', homepage),
+    re_path(r'^TV/(\d*)', showtv, name='tv-url'),
 ]
